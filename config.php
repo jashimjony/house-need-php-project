@@ -1,12 +1,12 @@
 <?php
 	//set server detail in variable
-	$servername = "localhost";
+	$server = "localhost";
 	$username = "root";
 	$password = "";
 	$database = "houzneed";
 
-	//create connection to database
-	$connection = new mysqli("$servername","$username","$password","$database");
+	//connection to database
+	$connection = new mysqli("$server","$username","$password","$database");
 
 	//check connection
 	if ($connection->connect_error) {
